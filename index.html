@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vme50GPU - Autonomous Driving Renderer</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: #050608;
+        color: #f0f3f6;
+      }
+      #app {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      canvas {
+        flex: 1;
+        display: block;
+      }
+      header {
+        padding: 0.5rem 1rem;
+        background: rgba(12, 16, 24, 0.92);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        backdrop-filter: blur(6px);
+      }
+      h1 {
+        margin: 0;
+        font-size: 1rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Vme50GPU Autonomous Driving Renderer</h1>
+      </header>
+      <canvas id="viewport"></canvas>
+    </div>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
