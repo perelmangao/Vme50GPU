@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "lib": ["ES2022", "DOM"],
+    "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@core/*": ["core/*"],
+      "@scene/*": ["scene/*"],
+      "@utils/*": ["utils/*"],
+      "@resources/*": ["resources/*"],
+      "@engine/*": ["engine/*"]
+    }
+  },
+  "include": ["src", "tests"],
+  "references": []
+}
